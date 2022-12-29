@@ -106,6 +106,10 @@ abstract class CreateRepositoryAbstract extends ServiceProvider
      */
     private function openOrCreateFile(string $path, string $name, string $extension = '.php')
     {
+        if(!is_dir($path)){
+            mkdir($path);
+        }
+        
         return fopen($path.$name.$extension, 'x');
     }
 
