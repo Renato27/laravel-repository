@@ -1,0 +1,32 @@
+{
+    "name": "rcm/laravel-repository",
+    "description": "Creates a repository using the model as a parameter",
+    "type": "library",
+    "homepage": "https://github.com/Renato27/laravel-repository",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rcm\\LaravelRepository\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "renato maldonado",
+            "email": "mallldonado@hotmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rcm\\LaravelRepository\\RepositoryProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "illuminate/config": "^7.0",
+        "illuminate/support": "^7.0"
+    }
+}

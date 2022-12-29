@@ -1,0 +1,67 @@
+<?php
+
+namespace App\Repositories;
+
+use App\Repositories\Contracts\{repository_name};
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
+
+class {repository_name}Implementation implements {repository_name}
+{
+    /**
+     * Retorna {recurso} baseado no ID.
+     *
+     * @param integer $id
+     * @return Model|null
+     */
+    public function get{recurso}(int $id): ?Model
+    {
+
+    }
+
+    /**
+     * Retorna uma coleção de {recurso}s.
+     *
+     * @param integer $id
+     * @return Collection|null
+     */
+    public function get{recurso}s(int $id): ?Collection
+    {
+
+    }
+
+    /**
+     * Cria um novo {recurso}
+     *
+     * @param array $detalhes
+     * @return Model|null
+     */
+    public function create{recurso}(array $detalhes): ?Model
+    {
+
+    }
+
+    /**
+     * Atualiza um {recurso}
+     *
+     * @param int $id
+     * @param array $detalhes
+     * @return Model|null
+     */
+    public function update{recurso}(int $id, array $detalhes): ?Model
+    {
+
+    }
+
+    /**
+     * Deleta um {recurso}
+     *
+     * @param int $id
+     * @param array $detalhes
+     * @return bool
+     */
+    public function delete{recurso}(int $id): bool
+    {
+
+    }
+}
